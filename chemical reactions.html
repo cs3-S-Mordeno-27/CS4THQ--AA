@@ -1,0 +1,330 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+         
+    <title>The Matter Lab</title> 
+</head>
+<body>
+    <header class="header4">
+        <div class="navbar">
+            <img src="logo4.png" class="logo" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="properties.html">PROPERTIES OF MATTER</a></li>
+                    <li><a href="States of matter.html">STATES OF MATTER</a></li>
+                    <li><a href="chemical reactions.html">CHEMICAL REACTIONS</a></li>
+                    <li><a href="Contact us.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="intro4">
+                <h1>Chemical Reactions of Matter</h1>
+                <p>Chemical reactions involve the production of new materials which are quite different from the reacting substances. Any new materials come from the reacting substances.</p>
+            </div>
+        </div>
+    </header>
+    <section class="section" id="intro">
+        <h2>Introduction to Chemical Reactions</h2>
+        <p>Chemical reaction, a process in which one or more substances, the reactants, are converted to one or more different substances, the products. Substances are either chemical elements or compounds. It occurs when chemical bonds between atoms are formed or broken.</p>
+        <div class="image-containerReact">
+          <img src="chemical reactions1.jpg" alt="Chemical Reactions Introduction">
+        </div>
+      </section>
+    
+      <section class="section" id="types-of-reactions">
+        <h2>Types of Chemical Reactions</h2>
+
+        <div class="property">
+            <h3>1. Synthesis Reactions</h3>
+            <p>In a synthesis reaction, two or more simple substances combine to form a more complex substance. This type of reaction is characterized by the formation of a single product from multiple reactants. Synthesis reactions are prevalent in nature and play a crucial role in various chemical processes.</p>
+            <img src="synthesis.jpg" alt="Synthesis Reaction Example">
+            <button class="interactive-button" onclick="showInfo('synthesis-description')">Learn More</button>
+            <div id="synthesis-description" class="description-box" style="display:none;">
+                <p>In a synthesis reaction, elements or simple compounds come together to form a single, more complex compound. The general form of a synthesis reaction is represented by the chemical equation: <strong>A + B → AB</strong>.</p>
+                <p>For example, the synthesis of water from hydrogen gas (H<sub>2</sub>) and oxygen gas (O<sub>2</sub>) is a classic example of a synthesis reaction. The reaction can be represented as:</p>
+                <p>2H<sub>2</sub> + O<sub>2</sub> → 2H<sub>2</sub>O</p>
+                <p>Here are some more examples of synthesis reactions:</p>
+                <ul>
+                    <p><strong>Formation of Ammonia:</strong> Nitrogen gas (N<sub>2</sub>) reacts with hydrogen gas (H<sub>2</sub>) to produce ammonia (NH<sub>3</sub>):</p>
+                    <img src="ammonia.jpg" alt="Formation of Ammonia">
+                    <p><strong>Synthesis of Sodium Chloride:</strong> Sodium metal (Na) reacts with chlorine gas (Cl<sub>2</sub>) to form sodium chloride (NaCl), commonly known as table salt:</p>
+                    <img src="NaCl.jpg" alt="Synthesis of Sodium Chloride">
+                    <!-- Add more examples as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Synthesis Reaction Simulator -->
+        <div class="synthesis-simulator">
+            <h3>Synthesis Reaction Simulator</h3>
+            <div class="simulator-container">
+                <div class="reactants">
+                    <h4>Reactants</h4>
+                    <p>Select reactants:</p>
+                    <select id="synthesis-reactant1">
+                        <option value="H2">Hydrogen gas (H<sub>2</sub>)</option>
+                        <option value="O2">Oxygen gas (O<sub>2</sub>)</option>
+                        <option value="C">Carbon (C)</option>
+                    </select>
+                    <select id="synthesis-reactant2">
+                        <option value="H2">Hydrogen gas (H<sub>2</sub>)</option>
+                        <option value="O2">Oxygen gas (O<sub>2</sub>)</option>
+                        <option value="C">Carbon (C)</option>
+                    </select>
+                    <button class="simulate-button" onclick="simulateSynthesisReaction()">Simulate Reaction</button>
+                </div>
+                <div class="products">
+                    <h4>Products</h4>
+                    <p id="synthesis-products-placeholder">Products will be displayed here after simulation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="property">
+            <h3>2. Decomposition Reactions</h3>
+            <p>In a decomposition reaction, a single compound breaks down into two or more simpler substances. This type of reaction is characterized by the breakdown of a compound into its component elements or simpler compounds.</p>
+            <img src="decomposition.jpg" alt="Decomposition Reaction Example">
+            <button class="interactive-button" onclick="showInfo('decomposition-description')">Learn More</button>
+            <div id="decomposition-description" class="description-box" style="display:none;">
+                <p>In a decomposition reaction, a compound breaks down into simpler compounds or elements. The general form of a decomposition reaction is represented by the chemical equation: <strong>AB → A + B</strong>.</p>
+                <p>For example, the decomposition of water into hydrogen gas (H<sub>2</sub>) and oxygen gas (O<sub>2</sub>) is a classic example of a decomposition reaction. The reaction can be represented as:</p>
+                <p>2H<sub>2</sub>O → 2H<sub>2</sub> + O<sub>2</sub></p>
+                <p>Here are some more examples of decomposition reactions:</p>
+                <ul>
+                    <p><strong>Decomposition of Calcium Carbonate:</strong> Calcium carbonate (CaCO<sub>3</sub>) decomposes into calcium oxide (CaO) and carbon dioxide (CO<sub>2</sub>):</p>
+                    <img src="calcium carbonate.png" alt="Decomposition of Calcium Carbonate">
+                    <p><strong>Decomposition of Potassium Chlorate:</strong> Potassium chlorate (KClO<sub>3</sub>) decomposes into potassium chloride (KCl) and oxygen gas (O<sub>2</sub>):</p>
+                    <img src="PotassiumCarbonate.jpg" alt="Decomposition of Potassium Chlorate">
+                    <!-- Add more examples as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Decomposition Reaction Simulator -->
+        <div class="decomposition-simulator">
+            <h3>Decomposition Reaction Simulator</h3>
+            <div class="simulator-container">
+                <div class="reactants">
+                    <h4>Reactant</h4>
+                    <p>Select a reactant:</p>
+                    <select id="decomposition-reactant">
+                        <option value="H2O">Water (H<sub>2</sub>O)</option>
+                        <option value="CaCO3">Calcium Carbonate (CaCO<sub>3</sub>)</option>
+                        <option value="KClO3">Potassium Chlorate (KClO<sub>3</sub>)</option>
+                    </select>
+                    <button class="simulate-button" onclick="simulateDecompositionReaction()">Simulate Reaction</button>
+                </div>
+                <div class="products">
+                    <h4>Products</h4>
+                    <p id="decomposition-products-placeholder">Products will be displayed here after simulation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="property">
+            <h3>3. Single Replacement Reactions</h3>
+            <p>In a single replacement reaction, one element replaces another element in a compound. This type of reaction is characterized by the substitution of one element for another in a compound.</p>
+            <img src="singleReplacement.jpg" alt="Single Replacement Reaction Example">
+            <button class="interactive-button" onclick="showInfo('single-replacement-description')">Learn More</button>
+            <div id="single-replacement-description" class="description-box" style="display:none;">
+                <p>In a single replacement reaction, an element reacts with a compound and takes the place of another element in that compound. The general form of a single replacement reaction is represented by the chemical equation: <strong>A + BC → AC + B</strong>.</p>
+                <p>For example, the reaction between zinc (Zn) and hydrochloric acid (HCl) is a classic example of a single replacement reaction. The reaction can be represented as:</p>
+                <p>Zn + 2HCl → ZnCl<sub>2</sub> + H<sub>2</sub></p>
+                <p>Here are some more examples of single replacement reactions:</p>
+                <ul>
+                    <p><strong>Reaction of Iron with Copper(II) Sulfate:</strong> Iron (Fe) reacts with copper(II) sulfate (CuSO<sub>4</sub>) to produce iron(II) sulfate (FeSO<sub>4</sub>) and copper (Cu):</p>
+                    <img src="iron and cooper.png" alt="Reaction of Iron with Copper(II) Sulfate">
+                    <p><strong>Reaction of Aluminum with Hydrochloric Acid:</strong> Aluminum (Al) reacts with hydrochloric acid (HCl) to produce aluminum chloride (AlCl<sub>3</sub>) and hydrogen gas (H<sub>2</sub>):</p>
+                    <img src="AluminumHCI.jpg" alt="Reaction of Aluminum with Hydrochloric Acid">
+                    <!-- Add more examples as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Single Replacement Reaction Simulator -->
+        <div class="single-replacement-simulator">
+            <h3>Single Replacement Reaction Simulator</h3>
+            <div class="simulator-container">
+                <div class="reactants">
+                    <h4>Reactants</h4>
+                    <p>Select reactants:</p>
+                    <select id="single-replacement-reactant1">
+                        <option value="Zn">Zinc (Zn)</option>
+                        <option value="Fe">Iron (Fe)</option>
+                        <option value="Al">Aluminum (Al)</option>
+                    </select>
+                    <select id="single-replacement-reactant2">
+                        <option value="HCl">Hydrochloric Acid (HCl)</option>
+                        <option value="CuSO4">Copper(II) Sulfate (CuSO<sub>4</sub>)</option>
+                    </select>
+                    <button class="simulate-button" onclick="simulateSingleReplacementReaction()">Simulate Reaction</button>
+                </div>
+                <div class="products">
+                    <h4>Products</h4>
+                    <p id="single-replacement-products-placeholder">Products will be displayed here after simulation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="property">
+            <h3>4. Double Replacement Reactions</h3>
+            <p>In a double replacement reaction, the ions of two compounds exchange places to form two new compounds. This type of reaction is characterized by the exchange of ions between two compounds.</p>
+            <img src="Double-replacement.jpg" alt="Double Replacement Reaction Example">
+            <button class="interactive-button" onclick="showInfo('double-replacement-description')">Learn More</button>
+            <div id="double-replacement-description" class="description-box" style="display:none;">
+                <p>In a double replacement reaction, the ions of two compounds exchange places to form two new compounds. The general form of a double replacement reaction is represented by the chemical equation: <strong>AB + CD → AD + CB</strong>.</p>
+                <p>For example, when silver nitrate (AgNO<sub>3</sub>) reacts with sodium chloride (NaCl), silver chloride (AgCl) and sodium nitrate (NaNO<sub>3</sub>) are formed. The reaction can be represented as:</p>
+                <p>AgNO<sub>3</sub> + NaCl → AgCl + NaNO<sub>3</sub></p>
+                <p>Here are some more examples of double replacement reactions:</p>
+                <ul>
+                    <p><strong>Reaction of Barium Chloride with Sodium Sulfate:</strong> Barium chloride (BaCl<sub>2</sub>) reacts with sodium sulfate (Na<sub>2</sub>SO<sub>4</sub>) to form barium sulfate (BaSO<sub>4</sub>) and sodium chloride (NaCl):</p>
+                    <img src="BariumChloride.jpg" alt="Barium and Sodium Reaction">
+                    <p><strong>Reaction of Potassium Iodide with Lead(II) Nitrate:</strong> Potassium iodide (KI) reacts with lead(II) nitrate (Pb(NO<sub>3</sub>)<sub>2</sub>) to form potassium nitrate (KNO<sub>3</sub>) and lead(II) iodide (PbI<sub>2</sub>):</p>
+                    <img src="LeadII.jpg" alt="Potassium and Lead Reaction">
+                    <!-- Add more examples as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="property">
+            <h3>5. Combustion Reactions</h3>
+            <p>In a combustion reaction, a substance reacts with oxygen to produce energy in the form of heat and light. This type of reaction is characterized by the rapid combination of a substance with oxygen to form oxides.</p>
+            <img src="Combustion.jpg" alt="Combustion Reaction Example">
+            <button class="interactive-button" onclick="showInfo('combustion-description')">Learn More</button>
+            <div id="combustion-description" class="description-box" style="display:none;">
+                <p>In a combustion reaction, a substance combines with oxygen to produce oxides, releasing energy in the form of heat and light. The general form of a combustion reaction is represented by the chemical equation: <strong>Fuel + O<sub>2</sub> → CO<sub>2</sub> + H<sub>2</sub>O</strong>.</p>
+                <p>For example, the combustion of methane (CH<sub>4</sub>) in the presence of oxygen (O<sub>2</sub>) produces carbon dioxide (CO<sub>2</sub>) and water (H<sub>2</sub>O). The reaction can be represented as:</p>
+                <p>CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O</p>
+                <p>Here are some more examples of combustion reactions:</p>
+                <ul>
+                    <p><strong>Combustion of Ethanol:</strong> Ethanol (C<sub>2</sub>H<sub>5</sub>OH) reacts with oxygen (O<sub>2</sub>) to form carbon dioxide (CO<sub>2</sub>) and water (H<sub>2</sub>O):</p>
+                    <video src="Combustion of Ethanol (liquid and vapor).mp4" controls>
+                    <p><strong>Combustion of Propane:</strong> Propane (C<sub>3</sub>H<sub>8</sub>) reacts with oxygen (O<sub>2</sub>) to form carbon dioxide (CO<sub>2</sub>) and water (H<sub>2</sub>O):</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section" id="quiz">
+        <h2>Chemical Reactions Quiz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the product of the synthesis reaction between hydrogen (H<sub>2</sub>) and oxygen (O<sub>2</sub>)?</p>
+                <label><input type="radio" name="q1" value="a"> Water (H<sub>2</sub>O)</label><br>
+                <label><input type="radio" name="q1" value="b"> Carbon Dioxide (CO<sub>2</sub>)</label><br>
+                <label><input type="radio" name="q1" value="c"> Ammonia (NH<sub>3</sub>)</label><br>
+        
+                <p>2. Which type of reaction is characterized by the breakdown of a compound into its component elements or simpler compounds?</p>
+                <label><input type="radio" name="q2" value="a"> Synthesis</label><br>
+                <label><input type="radio" name="q2" value="b"> Decomposition</label><br>
+                <label><input type="radio" name="q2" value="c"> Combustion</label><br>
+            </div>
+            <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+        </form>
+        <div id="quizResults"></div>
+    </section>
+
+    <script>
+    function showInfo(descriptionId) {
+        const descriptionBox = document.getElementById(descriptionId);
+        if (descriptionBox.style.display === 'none' || descriptionBox.style.display === '') {
+            descriptionBox.style.display = 'block';
+        } else {
+            descriptionBox.style.display = 'none';
+        }
+    }
+
+    function simulateSynthesisReaction() {
+        const reactant1 = document.getElementById('synthesis-reactant1').value;
+        const reactant2 = document.getElementById('synthesis-reactant2').value;
+        let product = '';
+
+        if (reactant1 === 'H2' && reactant2 === 'O2') {
+            product = 'Water (H<sub>2</sub>O)';
+        } else if (reactant1 === 'C' && reactant2 === 'O2') {
+            product = 'Carbon Dioxide (CO<sub>2</sub>)';
+        } else if (reactant1 === 'H2' && reactant2 === 'C') {
+            product = 'Methane (CH<sub>4</sub>)';
+        } else {
+            product = 'No reaction';
+        }
+
+        document.getElementById('synthesis-products-placeholder').innerHTML = product;
+    }
+
+    function simulateDecompositionReaction() {
+        const reactant = document.getElementById('decomposition-reactant').value;
+        let products = '';
+
+        if (reactant === 'H2O') {
+            products = 'Hydrogen gas (H<sub>2</sub>) and Oxygen gas (O<sub>2</sub>)';
+        } else if (reactant === 'CaCO3') {
+            products = 'Calcium oxide (CaO) and Carbon dioxide (CO<sub>2</sub>)';
+        } else if (reactant === 'KClO3') {
+            products = 'Potassium chloride (KCl) and Oxygen gas (O<sub>2</sub>)';
+        } else {
+            products = 'No reaction';
+        }
+
+        document.getElementById('decomposition-products-placeholder').innerHTML = products;
+    }
+
+    function simulateSingleReplacementReaction() {
+        const reactant1 = document.getElementById('single-replacement-reactant1').value;
+        const reactant2 = document.getElementById('single-replacement-reactant2').value;
+        let products = '';
+
+        if (reactant1 === 'Zn' && reactant2 === 'HCl') {
+            products = 'Zinc chloride (ZnCl<sub>2</sub>) and Hydrogen gas (H<sub>2</sub>)';
+        } else if (reactant1 === 'Fe' && reactant2 === 'CuSO4') {
+            products = 'Iron(II) sulfate (FeSO<sub>4</sub>) and Copper (Cu)';
+        } else if (reactant1 === 'Al' && reactant2 === 'HCl') {
+            products = 'Aluminum chloride (AlCl<sub>3</sub>) and Hydrogen gas (H<sub>2</sub>)';
+        } else {
+            products = 'No reaction';
+        }
+
+        document.getElementById('single-replacement-products-placeholder').innerHTML = products;
+    }
+
+    function checkAnswers() {
+        const answers = {
+            q1: 'a',
+            q2: 'b'
+        };
+        let score = 0;
+
+        for (let question in answers) {
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedOption && selectedOption.value === answers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById('quizResults').innerHTML = `You scored ${score} out of 2.`;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const logoutBtn = document.getElementById('logoutBtn');
+        logoutBtn.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+
+        const userGreeting = document.getElementById('userGreeting');
+        const username = localStorage.getItem('username');
+        if (username) {
+            userGreeting.textContent += `${username}!`;
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="js" href="script.js">
+         
+    <title>The Matter Lab</title> 
+</head>
+<body>
+    <header class="header2">
+        <div class="navbar">
+            <img src="logo2.png" class="logo" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="properties.html">PROPERTIES OF MATTER</a></li>
+                    <li><a href="States of matter.html">STATES OF MATTER</a></li>
+                    <li><a href="chemical reactions.html">CHEMICAL REACTIONS</a></li>
+                    <li><a href="Contact us.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="intro2">
+                <h1>Properties of Matter</h1>
+                <p>Any characteristic that can be measured, such as an object's density, colour, mass, volume, length, malleability, melting point, hardness, odour, temperature, and more, are considered properties of matter.</p>
+            </div>
+        </div>
+    </header>
+    <section id="properties-of-matter" class="section2">
+        <h2>Properties of Matter</h2>
+        <div class="card-container1">
+            <div class="card2-properties" id="physical-properties">
+                <img src="physical.jpg" alt="Physical Properties">
+                <h3>Physical Properties</h3>
+                <p>Explore the physical properties of matter such as state, color, density, and more.</p>
+            </div>
+            <div class="card3-properties" id="chemical-properties">
+                <img src="chemical.png" alt="Chemical Properties">
+                <h3>Chemical Properties</h3>
+                <p>Learn about the chemical properties of matter including reactivity, flammability, and more.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function showInfo(descriptionId) {
+            const descriptionBox = document.getElementById(descriptionId);
+            if (descriptionBox.style.display === "none") {
+                descriptionBox.style.display = "block";
+            } else {
+                descriptionBox.style.display = "none";
+            }
+        }
+    </script>
+    <section id="physical-properties-section" class="section3">
+        <h2>Physical Properties</h2>
+        
+        <div class="content">
+            <div class="definition">
+                <h3>Definition and Importance</h3>
+                <p>Physical properties are characteristics of matter that can be observed or measured without changing the composition of the substance. They are essential for identifying and classifying different types of matter.</p>
+            </div>
+            
+            <div class="examples">
+                <h3>Examples of Physical Properties</h3>
+
+                <!-- State of Matter -->
+                <div class="property" id="state-of-matter">
+                    <h4>State of Matter</h4>
+                    <p>States of matter are the distinct forms that different phases of matter take on. Solid, liquid, gas, and plasma are the primary states of matter.</p>
+                    <div id="states-interactive">
+                        <button onclick="showState('solid')">Solid</button>
+                        <button onclick="showState('liquid')">Liquid</button>
+                        <button onclick="showState('gas')">Gas</button>
+                        <button onclick="showState('plasma')">Plasma</button>
+                    </div>
+                    <div id="state-description"></div>
+                </div>
+
+                <!-- Color -->
+                <div class="property" id="color">
+                    <h4>Color</h4>
+                    <p>Color is the physical property of an object or substance with respect to the amount of light reflected by the object. It is determined visually by the measurement of hue, saturation, and brightness of the reflected light by an object. It can help us detect substances as there are different colors.</p>
+                    <div id="color-picker">
+                        <label for="colorInput">Choose a color:</label>
+                        <input type="color" id="colorInput" name="colorInput" value="#ff0000">
+                    </div>
+                    <div id="color-display" style="width: 100%; height: 200px; background-color: #ff0000; margin-top: 10px;"></div>
+                </div>
+
+                <!-- Density -->
+                <div class="property" id="density">
+                    <h4>Density</h4>
+                    <p>Density is a measure of mass per unit volume. It is an important property in determining how substances interact with each other.It is a measurable property that does not change the identity of the substance when determining it.
+                    </p>
+                    <video src="density.mp4" width="400" controls>Your browser does not support the video tag.</video>
+                </div>
+
+                <!-- Melting Point -->
+                <div class="property" id="melting-point">
+                    <h4>Melting Point</h4>
+                    <p>The melting point is the temperature at which a substance changes from a solid to a liquid.Melting point is thee temperature at which a solid changes into liquid. It is a change of physical state of a substance in which the chemical composition do not change. </p>
+                    <img src="melting point2.jpg" alt="Melting Point Example">
+                </div>
+
+                <!-- Boiling Point -->
+                <div class="property" id="boiling-point">
+                    <h4>Boiling Point</h4>
+                    <p>The boiling point is the temperature at which a substance changes from a liquid to a gas.For instance, when water (H2O) boils, so when it converts from a liquid to a gas or water to steam, it is still water.</p>
+                    <video src="boiling point.mp4" width="400" controls>Your browser does not support the video tag.</video>
+                </div>
+
+                <!-- Solubility -->
+                <div class="property" id="solubility">
+                    <h4>Solubility</h4>
+                    <p>Solubility is the ability of a substance to dissolve in another substance, forming a solution.It's physical because it doesn't change the chemical identity of the substances involved.</p>
+                    <img src="solubility.jpg" alt="Solubility Example">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chemical-properties-section" class="section">
+        <h2>Chemical Properties</h2>
+        
+        <div class="content">
+            <div class="definition">
+                <h3>Definition and Importance</h3>
+                <p>Chemical properties are characteristics of a substance that become evident during a chemical reaction. They describe the ability of a substance to undergo changes that transform it into different substances. Understanding chemical properties is crucial for predicting how substances will react and for identifying unknown substances.</p>
+            </div>
+            
+            <div class="examples">
+                <h3>Examples of Chemical Properties</h3>
+
+                <!-- Reactivity -->
+                <div class="property" id="reactivity">
+                    <h4>Reactivity</h4>
+                    <p>Reactivity refers to how easily a substance undergoes a chemical reaction with other substances. It is an important property for understanding how substances interact.</p>
+                    <img src="reactivity.jpg" alt="Reactivity Example">
+                    <button class="interactive-button" onclick="showInfo('reactivity-description')">Learn More</button>
+                    <div id="reactivity-description" class="description-box" style="display:none;">
+                        Reactivity is the tendency of a substance to undergo chemical reaction, either by itself or with other materials, and to release energy. For example, sodium reacts explosively with water.
+                    </div>
+                </div>
+
+                <!-- Flammability -->
+                <div class="property" id="flammability">
+                    <h4>Flammability</h4>
+                    <p>Flammability is the ability of a substance to burn or ignite, causing fire or combustion. Flammability is a chemical property that describes how easily a material can burn. It is a key property in assessing the safety and handling of materials.</p>
+                    <video src="flammability.mp4" width="400" controls>Your browser does not support the video tag.</video>
+                </div>
+
+                <!-- pH -->
+                <div class="property" id="ph">
+                    <h4>pH</h4>
+                    <p>The pH scale measures how acidic or basic a substance is. It is an important property in many chemical processes and reactions.</p>
+                    <img src="ph-scale.png" alt="pH Scale Example">
+                    <button class="interactive-button" onclick="showInfo('ph-description')">Learn More</button>
+                    <div id="ph-description" class="description-box" style="display:none;">
+                        The pH scale ranges from 0 to 14, with 7 being neutral. A pH less than 7 indicates acidity, and a pH greater than 7 indicates alkalinity. For instance, lemon juice has a pH of around 2, making it very acidic.Objects that are not very acidic are called basic. As you can see from the pH scale above, pure water has a pH value of 7.
+                    </div>
+                </div>
+
+                <!-- Toxicity -->
+                <div class="property" id="toxicity">
+                    <h4>Toxicity</h4>
+                    <p>Toxicity is the degree to which a substance can harm humans or animals. It is a critical property for assessing the potential hazards of chemicals.</p>
+                    <img src="toxicity.jpg" alt="Toxicity Example">
+                    <button class="interactive-button" onclick="showInfo('toxicity-description')">Learn More</button>
+                    <div id="toxicity-description" class="description-box" style="display:none;">
+                        Toxicity is measured by the degree to which a substance can damage an organism. For example, lead is highly toxic to humans, affecting the nervous system.Materials with the chemical property of toxicity include lead, chlorine gas, hydrofluoric acid, and mercury. Toxicity is measured by how the lead, chlorine gas, mercury, or other substance affects the organism
+                    </div>
+                </div>
+
+                <!-- Chemical Stability -->
+                <div class="property" id="chemical-stability">
+                    <h4>Chemical Stability</h4>
+                    <p>Chemical stability refers to the ability of a substance to remain unchanged under specified conditions. It is important for understanding the shelf life and safety of chemicals. </p>
+                    <img src="chemical stability.jpg" alt="Chemical Stability Example">
+                    <button class="interactive-button" onclick="showInfo('chemical-stability-description')">Learn More</button>
+                    <div id="chemical-stability-description" class="description-box" style="display:none;">
+                        Chemical stability refers to the resistance of a chemical substance to change in a chemical reaction. Stable chemicals do not easily react with other substances. For example, noble gases like helium are very stable and therefore unlikely to form bonds. The reason for this is that they have a full valence shell. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="matching-quiz" class="section">
+        <h2>Matching Quiz: Physical vs Chemical Properties</h2>
+        <p>Match the properties in Column A with the correct type (Physical or Chemical) in Column B:</p>
+        
+        <div class="quiz-container">
+            <div class="columns">
+                <div class="column-a">
+                    <ul>
+                        <li><img src="orange.jpg" alt="Color"> 1. Color</li>
+                        <li><img src="reactivity.jpg" alt="Reactivity"> 2. Reactivity</li>
+                        <li><img src="melting point.jpg" alt="Melting Point"> 3. Melting Point</li>
+                        <li><img src="flammability.jpg" alt="Flammability"> 4. Flammability</li>
+                        <li><img src="density.jpg" alt="Density"> 5. Density</li>
+                        <li><img src="toxicity.jpg" alt="Toxicity"> 6. Toxicity</li>
+                    </ul>
+                </div>
+                <div class="column-b">
+                    <ul>
+                        <li>A. Physical</li>
+                        <li>B. Chemical</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="inputs">
+                <label for="q1">1: </label>
+                <select id="q1">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                
+                <label for="q2">2: </label>
+                <select id="q2">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                
+                <label for="q3">3: </label>
+                <select id="q3">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                
+                <label for="q4">4: </label>
+                <select id="q4">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                
+                <label for="q5">5: </label>
+                <select id="q5">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+                
+                <label for="q6">6: </label>
+                <select id="q6">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                </select>
+            </div>
+            
+            <button onclick="checkMatchingQuiz()">Submit</button>
+            <div id="quiz-result" class="result"></div>
+        </div>
+    </section>
+    <script> 
+    function showState(state) {
+        const description = {
+            solid: "Solids have a definite shape and volume. Their particles are closely packed and vibrate in place.",
+            liquid: "Liquids have a definite volume but take the shape of their container. Their particles are close but can move past one another.",
+            gas: "Gases have neither a definite shape nor volume. Their particles are far apart and move freely.",
+            plasma: "Plasma is an ionized state of matter similar to gas but with charged particles. It is found in stars and fluorescent lights."
+        };
+    
+        document.getElementById('state-description').textContent = description[state];
+    }
+    document.getElementById('colorInput').addEventListener('input', function() {
+    const selectedColor = this.value;
+    document.getElementById('color-display').style.backgroundColor = selectedColor;
+    })
+    function checkMatchingQuiz() {
+        const answers = ['A', 'B', 'A', 'B', 'A', 'B'];
+        let correct = 0;
+        for (let i = 1; i <= 6; i++) {
+            const answer = document.getElementById('q' + i).value;
+            if (answer === answers[i - 1]) {
+                correct++;
+            }
+        }
+        const resultDiv = document.getElementById('quiz-result');
+        resultDiv.textContent = `You got ${correct} out of 6 correct.`;
+        if (correct === 6) {
+            resultDiv.style.color = 'green';
+        } else {
+            resultDiv.style.color = 'red';
+        }
+    }
+</script>
+</body>
+</html>

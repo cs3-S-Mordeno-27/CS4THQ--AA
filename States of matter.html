@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="js" href="script.js">
+         
+    <title>The Matter Lab</title> 
+</head>
+<body>
+    <header class="header3">
+        <div class="navbar">
+            <img src="logo3.png" class="logo" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="properties.html">PROPERTIES OF MATTER</a></li>
+                    <li><a href="States of matter.html">STATES OF MATTER</a></li>
+                    <li><a href="chemical reactions.html">CHEMICAL REACTIONS</a></li>
+                    <li><a href="Contact us.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="intro3">
+                <h1>How states affect properties and reactions</h1>
+                <p>Matter exhibits distinct physical characteristics, impacting how they interact with each other and their surroundings. Reactions proceed at different rates depending on the state, with gases typically reacting more rapidly (increased molecular mobility).</p>
+            </div>
+        </div>
+    </header>
+    <section class="section" id="states-of-matter">
+        <h2>States of Matter's Effect</h2>
+        <p>All matter exists in one of four fundamental states: solid, liquid, gas, and plasma. Each state has distinct characteristics and behaviors that significantly impact the properties of substances and their reactions.</p>
+    </section>
+    
+    <section class="section" id="solid-state">
+        <h2>Solids</h2>
+        <div class="property">
+            <h3>Characteristics of Solids</h3>
+            <p>Solids have a definite shape and volume. The particles in a solid are closely packed together in a fixed arrangement, which makes solids rigid and incompressible.</p>
+            <img src="solids.jpg" alt="Solid Example">
+        </div>
+        <div class="property">
+            <h3>Effect on Properties and Reactions</h3>
+            <p>The fixed structure of solids means they have a high melting point and do not flow. Chemical reactions involving solids often occur at the surface where particles can interact.</p>
+            <button class="interactive-button" onclick="showInfo('solid-reactions')">Learn More</button>
+            <div id="solid-reactions" class="description-box" style="display:none;">
+                <p>In solids, the reactions are typically slower because the particles are not free to move. For example, rusting of iron occurs slowly because it is a solid-state reaction.</p>
+                <video src="rusting.mp4" controls>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="liquid-state">
+        <h2>Liquids</h2>
+        <div class="property">
+            <h3>Characteristics of Liquids</h3>
+            <p>Liquids have a definite volume but take the shape of their container. The particles are close together but can move past one another, making liquids fluid and incompressible.</p>
+            <img src="liquid2.jpg" alt="Liquid Example">
+        </div>
+        <div class="property">
+            <h3>Effect on Properties and Reactions</h3>
+            <p>Liquids can flow and mix with other substances, which allows for faster reactions compared to solids. Temperature and pressure can also significantly impact the behavior of liquids.</p>
+            <button class="interactive-button" onclick="showInfo('liquid-reactions')">Learn More</button>
+            <div id="liquid-reactions" class="description-box" style="display:none;">
+                <p>In liquids, the reactions are generally faster due to the ability of particles to move freely and interact more frequently. For instance, acids react more quickly in liquid form than as solids.</p>
+                <video src="acids with liquids.mp4" controls>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="gas-state">
+        <h2>Gases</h2>
+        <div class="property">
+            <h3>Characteristics of Gases</h3>
+            <p>Gases have neither a definite shape nor a definite volume. The particles are far apart and move freely, making gases compressible and able to expand to fill their container.</p>
+            <img src="gases2.jpg" alt="Gas Example">
+        </div>
+        <div class="property">
+            <h3>Effect on Properties and Reactions</h3>
+            <p>Gases diffuse quickly and can mix with other gases easily, leading to rapid reactions. Changes in temperature and pressure can greatly affect the behavior of gases.</p>
+            <button class="interactive-button" onclick="showInfo('gas-reactions')">Learn More</button>
+            <div id="gas-reactions" class="description-box" style="display:none;">
+                <p>Gas-phase reactions are typically very fast due to the high energy and movement of particles. For example, combustion reactions in gases can be explosive and very rapid.</p>
+                <video src="combust.mp4" controls>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="plasma-state">
+        <h2>Plasma</h2>
+        <div class="property">
+            <h3>Characteristics of Plasma</h3>
+            <p>Plasma is an ionized state of matter similar to gas but with charged particles. It is found in stars, including the sun, and is created at very high temperatures.</p>
+            <img src="plasma.jpg" alt="Plasma Example">
+        </div>
+        <div class="property">
+            <h3>Effect on Properties and Reactions</h3>
+            <p>Plasma conducts electricity and is affected by magnetic fields. Reactions in plasma are highly energetic and can lead to the formation of new substances and light.</p>
+            <button class="interactive-button" onclick="showInfo('plasma-reactions')">Learn More</button>
+            <div id="plasma-reactions" class="description-box" style="display:none;">
+                <p>Plasma reactions involve highly energetic particles, leading to rapid and often unique reactions. For example, the sun's energy is produced through nuclear fusion in a plasma state.</p>
+                <video src="How Does Fusion Produce Energy_.mp4" controls>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function showInfo(descriptionId) {
+            const descriptionBox = document.getElementById(descriptionId);
+            if (descriptionBox.style.display === "none") {
+                descriptionBox.style.display = "block";
+            } else {
+                descriptionBox.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js"></script>
+    <title>The Matter Lab</title> 
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="properties.html">PROPERTIES OF MATTER</a></li>
+                    <li><a href="States of matter.html">STATES OF MATTER</a></li>
+                    <li><a href="chemical reactions.html">CHEMICAL REACTIONS</a></li>
+                    <li><a href="Contact us.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="intro">
+                <h1>Welcome to The Matter Lab</h1>
+                <p id="userGreeting">Hello,<span id="username"></span> </p>
+                <p>Welcome to our Chemistry Learning Platform! Whether you're a student, teacher, or just curious about the wonders of chemistry, our website offers a wealth of resources to help you explore and understand the fascinating world of chemistry.</p>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>Properties</h5>
+                    <p>Learn about matter's properties</p>
+                </div>
+                <div class="card card3">
+                    <h5>Reactions</h5>
+                    <p>Learn about matter's reactions</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="welcome-message">
+            <h1>Welcome, <span id="userName"></span>!</h1>
+            <p>You have successfully logged in.</p>
+            <button id="logoutBtn">Logout</button><br>
+        </div>
+    </div>
+    <section id="key-features" class="section">
+        <div class="container">
+            <h2>Featured topics</h2>
+            <div class="feature">
+                <img src="Properties-of-Matter.jpg" alt="Feature 1" width="800">
+                <h3>Properties of Matter</h3>
+                <p>Engage with interactive quizzes, simulations, and experiments to deepen your understanding of the properties of matter.</p>
+            </div>
+            <div class="feature">
+                <img src="reaction.png" alt="Feature 2">
+                <h3>Reactions of Matter</h3>
+                <p>Access a wide range of topics covering chemical reactions, and learn about substances that go into a chemical reaction that are called the reactants.</p>
+            </div>
+            <div class="feature">
+                <img src="learning paths.jpg" alt="Feature 3">
+                <h3>How states affect properties and reactions</h3>
+                <p>Customize your learning experience with personalized progress tracking. The physical state of matter, whether it's solid, liquid, or gas, can significantly impact its properties and its ability to undergo chemical reactions.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about-us" class="section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Welcome to The Matter Lab, your go-to destination for exploring the fascinating world of chemistry. Our mission is to provide accessible and engaging resources to students, educators, and anyone curious about the properties and behavior of matter.</p>
+                <p>At The Matter Lab, we believe that learning about chemistry should be exciting and interactive. That's why we offer a wide range of educational materials, from informative articles and videos to interactive experiments and quizzes.</p>
+                <p>Join us on this journey of discovery as we delve into the mysteries of matter and uncover the secrets of the chemical world. Whether you're a beginner or an expert, there's always something new to learn at The Matter Lab!</p>
+            </div>
+            <div class="about-image">
+                <img src="about us.png" alt="About Us Image">
+                <img src="chem.jpg">
+            </div>
+        </div>
+    </section>
+    <section id="properties-of-matter" class="section">
+        <h2>What is Matter?</h2>
+        <p>Matter is anything that has mass and takes up space. It is made up of atoms and molecules and can exist in different states such as solid, liquid, gas, and plasma. The properties of matter can be divided into physical and chemical properties.</p>
+        <video src="matter.mp4" width="700" controls>
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="state-info-cards">
+            <div class="state-info-card">
+                <img src="particleAttraction.jpg" alt="Solid">
+                <h3>Solid</h3>
+                <p>A solid is characterized by particles that are closely packed together in a fixed arrangement.</p>
+            </div>
+            <div class="state-info-card">
+                <img src="space.jpg" alt="Liquid">
+                <h3>Liquid</h3>
+                <p>A liquid takes the shape of its container but maintains a constant volume independent of pressure.</p>
+            </div>
+            <div class="state-info-card">
+                <img src="moving.png" alt="Gas">
+                <h3>Gas</h3>
+                <p>A gas has no fixed shape or volume and will expand to fill the space available to it.</p>
+            </div>
+            <div class="state-info-card">
+                <img src="size.jpg" alt="Plasma">
+                <h3>Plasma</h3>
+                <p>Plasma is a state of matter similar to gas in which a certain portion of the particles are ionized.</p>
+            </div>
+        </div>
+    </section>
+        <br><h3>Interactive Quiz: Test Your Knowledge</h3><br>
+        <div class="quiz-container">
+            <p>1. Which state of matter has a definite shape and volume?</p>
+            <button onclick="checkAnswer(1, 'solid')">Solid</button>
+            <button onclick="checkAnswer(1, 'liquid')">Liquid</button>
+            <button onclick="checkAnswer(1, 'gas')">Gas</button>
+            <button onclick="checkAnswer(1, 'plasma')">Plasma</button>
+            <div id="result1" class="result"></div>
+
+            <p>2. Which state of matter takes the shape of its container but has a definite volume?</p>
+            <button onclick="checkAnswer(2, 'solid')">Solid</button>
+            <button onclick="checkAnswer(2, 'liquid')">Liquid</button>
+            <button onclick="checkAnswer(2, 'gas')">Gas</button>
+            <button onclick="checkAnswer(2, 'plasma')">Plasma</button>
+            <div id="result2" class="result"></div>
+
+            <p>3. Which state of matter has neither a definite shape nor a definite volume?</p>
+            <button onclick="checkAnswer(3, 'solid')">Solid</button>
+            <button onclick="checkAnswer(3, 'liquid')">Liquid</button>
+            <button onclick="checkAnswer(3, 'gas')">Gas</button>
+            <button onclick="checkAnswer(3, 'plasma')">Plasma</button>
+            <div id="result3" class="result"></div>
+        </div>
+    </section>
+
+    <section id="construct-matter-section" class="section">
+        <h2>Construct Your Matter</h2>
+        <form onsubmit="constructMatter(event)">
+            <div class="form-group">
+                <label for="state" class="label">Select State:</label>
+                <select id="state">
+                    <option value="solid">Solid</option>
+                    <option value="liquid">Liquid</option>
+                    <option value="gas">Gas</option>
+                    <option value="plasma">Plasma</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="property" class="label">Select Property:</label>
+                <select id="property">
+                    <option value="rigid">Rigid</option>
+                    <option value="fluid">Fluid</option>
+                    <option value="compressible">Compressible</option>
+                    <option value="ionized">Ionized</option>
+                </select>
+            </div>
+            <button type="submit">Construct</button>
+        </form>
+        <div id="matter-result" class="result"></div>
+        <img id="matter-image" class="matter-image" src="" alt="Constructed Matter">
+    </section>
+    <script>
+        function checkAnswer(question, answer) {
+            let correctAnswers = {
+                1: 'solid',
+                2: 'liquid',
+                3: 'gas'
+            };
+
+            let resultDiv = document.getElementById('result' + question);
+            if (answer === correctAnswers[question]) {
+                resultDiv.innerHTML = "Correct!";
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.innerHTML = "Incorrect. The correct answer is " + correctAnswers[question] + ".";
+                resultDiv.style.color = "red";
+            }
+            resultDiv.style.display = "block";
+        }
+        function constructMatter(event) {
+            event.preventDefault();
+            const state = document.getElementById('state').value;
+            const property = document.getElementById('property').value;
+            const resultDiv = document.getElementById('matter-result');
+            const image = document.getElementById('matter-image');
+            let description = '';
+            let imageUrl = '';
+
+            if (state === 'solid' && property === 'rigid') {
+                description = 'You have constructed a Solid that is Rigid. It has a definite shape and volume.';
+                imageUrl = 'solid.jpg'; // Replace with your image path
+            } else if (state === 'liquid' && property === 'fluid') {
+                description = 'You have constructed a Liquid that is Fluid. It takes the shape of its container but has a definite volume.';
+                imageUrl = 'fluid.jpg'; // Replace with your image path
+            } else if (state === 'gas' && property === 'compressible') {
+                description = 'You have constructed a Gas that is Compressible. It has neither a definite shape nor a definite volume.';
+                imageUrl = 'gas.jpg'; // Replace with your image path
+            } else if (state === 'plasma' && property === 'ionized') {
+                description = 'You have constructed Plasma that is Ionized. It is a highly energetic state of matter.';
+                imageUrl = 'plasma.jpg'; // Replace with your image path
+            } else {
+                description = 'The combination you chose is not typical. Please select a valid state and property combination.';
+                imageUrl = '';
+            }
+
+            resultDiv.innerText = description;
+            if (imageUrl) {
+                image.src = imageUrl;
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
